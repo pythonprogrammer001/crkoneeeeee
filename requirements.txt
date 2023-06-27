@@ -1,6 +1,0 @@
-Django==4.2.1
-django_autoslug==1.9.9
-django_tinymce==3.6.1
-Pillow==9.3.0
-django-jazzmin==2.6.0
-gunicorn
