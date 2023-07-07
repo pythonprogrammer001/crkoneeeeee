@@ -1,0 +1,2812 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Specer design">
+        <meta name="keywords" content="Specer, unica, creative, html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Specer | design</title>
+
+        <link
+        rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <!-- Google Font -->
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="static/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="static/css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="static/css/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="static/css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="static/css/style.css" type="text/css">
+
+
+        <style>
+            .carousel-item {
+                height: 100vh;
+            }
+            .carousel-item img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+            .my-head {
+                padding-bottom: 5px;
+                padding-right: 283px;
+                font-weight: 500;
+                color: white;
+            }
+
+            img.img-fluid.logoclass {
+                padding-top: 40px;
+                padding-left: 107px;
+                height: 226px;
+            }
+
+
+            .product {
+                display: block;
+                width: 100%;
+                margin-bottom: 30px;
+                position: relative;
+                -moz-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }
+            @media(max-width: 991.98px) {
+                .product {
+                    margin-bottom: 30px;
+                }
+            }
+            .product .img-prod {
+                position: relative;
+                display: block;
+                overflow: hidden;
+            }
+            .product .img-prod .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                content: '';
+                opacity: 0;
+                background: #151618;
+                -moz-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }
+            .product .img-prod span.status {
+                position: absolute;
+                top: 10px;
+                left: -1px;
+                padding: 2px 15px;
+                color: #000000;
+                font-weight: 300;
+                background: #ffa45c;
+            }
+            .product .img-prod img {
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+                transform: scale(1);
+                -moz-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }
+            .product .img-prod:hover img,
+            .product .img-prod:focus img {
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+            .product .img {
+                display: block;
+                height: 500px;
+            }
+            .product .icon {
+                width: 60px;
+                height: 60px;
+                background: #fff;
+                opacity: 0;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                border-radius: 50%;
+                -moz-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }
+            .product .icon span {
+                color: #000000;
+            }
+            .product:hover .icon {
+                opacity: 1;
+            }
+            .product:hover .img-prod .overlay {
+                opacity: .3;
+            }
+            .product .text {
+                background: #fff;
+                position: relative;
+                width: 100%;
+            }
+            .product .text h3 {
+                font-size: 14px;
+                margin-bottom: 5px;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            .product .text h3 a {
+                color: #000000;
+            }
+            .product .text p.price {
+                margin-bottom: 0;
+                color: #000000;
+                font-weight: 400;
+            }
+            .product .text p.price span.price-dc {
+                text-decoration: line-through;
+                color: #b3b3b3;
+            }
+            .product .text p.price span.price-sale {
+                color: #000000;
+            }
+            .product .text .pricing,
+            .product .text .rating {
+                width: 50%;
+            }
+
+
+            @media(max-width: 767px) {
+                .carousel-item {
+                    height: 83vh;
+                }
+            }
+            @media(max-width: 625px) {
+                .carousel-item {
+                    height: 71vh;
+                }
+            }
+            @media(max-width: 505px) {
+                .carousel-item {
+                    height: 59vh;
+                }
+            }
+            @media(max-width: 344px) {
+                .carousel-item {
+                    height: 49vh;
+                }
+            }
+
+
+            a.square-text {
+                font-size: 13px;
+                font-weight: bold;
+                padding-left: 6px;
+            }
+
+
+            .extra-dark {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+                z-index: 1;
+            }
+
+
+            .card-img-overlay {
+                z-index: 2;
+            }
+
+
+            .givn-pdg {
+                padding-top: 32%;
+            }
+
+            @media(max-width: 992px) {
+                .givn-pdg {
+                    padding-top: 7%;
+                }
+            }
+
+
+            @media(max-width: 768px) {
+                .givn-pdg {
+                    padding-top: 33%;
+                }
+            }
+
+
+            @media(max-width: 469px) {
+                .givn-pdg {
+                    padding-top: 28%;
+                }
+            }
+
+            @media(max-width: 386px) {
+                .givn-pdg {
+                    padding-top: 12%;
+                }
+            }
+            @media(max-width: 349px) {
+                .givn-pdg {
+                    padding-top: 3%;
+                }
+            }
+
+            .custom-transparent-container {
+                background-color: transparent;
+                border: none;
+            }
+
+            .custom-background {
+                background-image: url("static/images/poll-bg.png");
+                background-size: 150%;
+                background-repeat: no-repeat;
+            }
+
+
+            .video-container {
+                overflow: hidden;
+            }
+
+            .video-wrapper {
+                position: relative;
+                transition: transform 0.3s;
+                transform-origin: center;
+            }
+
+            .video-container:hover .video-wrapper {
+                transform: scale(1.1);
+            }
+
+            .video-container:not(:hover) .video-wrapper {
+                transform: scale(0.8);
+            }
+
+            .video-wrapper video {
+                width: 100%;
+                height: auto;
+            }
+
+
+            .video-image {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                transform: translateY(-50%);
+                position: relative;
+                top: 50%;
+            }
+
+
+            .content-wrapper {
+                margin: -49px;
+                padding: 27px;
+            }
+
+
+            .bi-play-btn-fill {
+
+                color: #950460;
+                padding-left: 8rem;
+                font-size: 60px;
+
+            }
+
+            .bi-play-btn-fill path:nth-child(2) {
+                fill: white; /* Set the desired color */
+            }
+
+
+            .text-center.nameplayer {
+                padding-top: 152px;
+                padding-left: 67px;
+            }
+
+            .soccer-item.set-bg {
+                height: 694px;
+            }
+
+
+            img.sponsor-img {
+                height: 64px;
+                padding-left: 113px;
+            }
+
+
+            /* i.bi.bi-clock.share_icon {
+    padding-left: 72%;
+}
+
+
+
+@media(max-width: 992px) {
+    i.bi.bi-clock.share_icon {
+        padding-left: 47%;
+    }
+}
+@media(max-width: 768px) {
+    i.bi.bi-clock.share_icon {
+        padding-left: 72%;
+    }
+}
+@media(max-width: 491px) {
+    i.bi.bi-clock.share_icon {
+        padding-left: 64%;
+    }
+}
+@media(max-width: 405px) {
+    i.bi.bi-clock.share_icon {
+        padding-left: 57%;
+    }
+}
+@media(max-width: 356px) {
+    i.bi.bi-clock.share_icon {
+        padding-left: 54%;
+    }
+} */
+        </style>
+    </head>
+
+    <body>
+        <!-- Page Preloder -->
+        {% comment %} <div id="preloder">
+            <div class="loader"></div>
+        </div> {% endcomment %}
+
+        <!-- Offcanvas Menu Section Begin -->
+        <div class="offcanvas-menu-overlay"></div>
+        <div class="offcanvas-menu-wrapper">
+            <div class="canvas-close">
+                <i class="fa fa-close"></i>
+            </div>
+            <div class="search-btn search-switch">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="header__top--canvas">
+                <div class="ht-info">
+                    <ul>
+                        <li> <a href="#" style="cursor:pointer">ROYALS ACADEMY</a></li>
+                        <li> <a href="#" style="cursor:pointer">ROYALS SCHOOL OF BUSINESS</a></li>
+                        <li> <a href="#" style="cursor:pointer">ROYAL RAJASTHAN FOUNDATION</a></li>
+                        <li>
+                            <a href="#">Sign in</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ht-links">
+                    <a href="#">
+                        MemberShip
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-vimeo"></i>Shop
+                    </a>
+                    <a href="#">
+                        Light Mode
+                    </a>
+                    
+                </div>
+            </div>
+            <ul class="main-menu mobile-menu">
+                <li class="active">
+                    <a href="./index.html">Latest Updates</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a>News & Features</a>
+                        </li>
+                        <li>
+                            <a>Photos</a>
+                        </li>
+                        <li>
+                            <a href="#">Videos</a>
+                        </li>
+                        <li>
+                            <a href="#">Press Releases</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>IPL 2023</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a>Players</a>
+                        </li>
+                        <li>
+                            <a>Matches</a>
+                        </li>
+                        <li>
+                            <a href="#">Points Table</a>
+                        </li>
+                        <li>
+                            <a href="#">Stats</a>
+                        </li>
+                        <li>
+                            <a href="#">Barsapara Stadium, Guwahati</a>
+                        </li>
+                        <li>
+                            <a href="#">Sawai Mansingh Stadium, Jaipur</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Games</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a>QuizzeRR</a>
+                        </li>
+                        <li>
+                            <a>Predictor</a>
+                        </li>
+                        <li>
+                            <a href="#">GuesseRR</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a>Royals TV</a>
+                </li>
+                <li>
+                    <a href="#">Halla Bol</a>
+                </li>
+                <li>
+                    <a href="#">Cricket Ka Ticket</a>
+
+                </li>
+            </ul>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+        <!-- Offcanvas Menu Section End -->
+
+        <!-- Header Section Begin -->
+        <header class="header-section">
+            <div class="header__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="ht-info">
+                                <ul>
+                                    <li> <a href="#" style="cursor:pointer">ROYALS ACADEMY</a></li>
+                                    <li> <a href="#" style="cursor:pointer">ROYALS SCHOOL OF BUSINESS</a></li>
+                                    <li> <a href="#" style="cursor:pointer">ROYAL RAJASTHAN FOUNDATION</a></li>
+                                    <li>
+                                        <a href="#">Sign in</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="ht-links">
+                                <a href="#">
+                                    MemberShip
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-vimeo"></i>Shop
+                                </a>
+                                <a href="#">
+                                    Light Mode
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="logo">
+                                <a href="./index.html"><img src="static/img/new_logo1.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-10">
+                            <div class="nav-menu">
+                                <ul class="main-menu">
+                                    <li class="active">
+                                        <a href="./index.html">Latest Updates</a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <a>News & Features</a>
+                                            </li>
+                                            <li>
+                                                <a>Photos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Videos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Press Releases</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a>IPL 2023</a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <a>Players</a>
+                                            </li>
+                                            <li>
+                                                <a>Matches</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Points Table</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Stats</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Barsapara Stadium, Guwahati</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Sawai Mansingh Stadium, Jaipur</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a>Games</a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <a>QuizzeRR</a>
+                                            </li>
+                                            <li>
+                                                <a>Predictor</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">GuesseRR</a>
+                                            </li>
+         
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a>Royals TV</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Halla Bol</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cricket Ka Ticket</a>
+
+                                    </li>
+
+                                </ul>
+                                <div class="nm-right search-switch">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="canvas-open">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Hero Section Begin -->
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="static/img/hero/rajasthan.png" alt="Image 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="my-head">The Ashes, 2023: Centurion Joe Root claims top spot in ICC Test Rankings after Edgbaston finish</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="static/img/hero/ChampionsBanner.png" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/img/hero/hero-1.jpg" alt="Image 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <!-- Hero Section End -->
+
+        <!-- Trending News Section Begin -->
+        <div class="trending-news-section">
+            <div class="container">
+                <div class="tn-title">
+                    <i class="fa fa-caret-right"></i>
+                    Trending News</div>
+                <div class="news-slider owl-carousel">
+                    <div class="nt-item">Vinyl Banners With Its Different Types Kinds And Applications</div>
+                    <div class="nt-item">Banners With Its Different Types Kinds And Applications</div>
+                </div>
+            </div>
+        </div>
+        <!-- Trending News Section End -->
+
+        <!-- Match Section Begin -->
+        <section class="match-section set-bg" data-setbg="static/img/match/match-bg.jpg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="bookcarsouel" class="carousel slide d-md-none" data-ride="carousel">
+                            <div class="carousel-inner booknowhide">
+                                <div
+                                    class="carousel-item active">
+                                    <!-- <img src="static/images/product-1.jpg" alt="Slide 1"> -->
+                                    <div class="product">
+                                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/shirt1.png" alt="Shailucoder design">
+                                            <span class="status">30%</span>
+                                            <div class="overlay"></div>
+                                        </a>
+                                        <div class="text py-3 px-3">
+                                            <h3>
+                                                <a href="#">Pink Printed Official Matchday Replica Jersey 2023</a>
+                                            </h3>
+                                            <div class="d-flex">
+                                                <div class="pricing">
+                                                    <p class="price">
+                                                        <span class="mr-2 price-dc">₹1999</span>
+                                                        <span class="price-sale">₹1799</span>
+                                                    </p>
+                                                </div>
+                                                <div class="rating">
+                                                    <p class="text-right">
+                                                        <button type="button" class="btn btn-primary">Buy Now</button>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="product">
+                                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/shirt2.png" alt="Shailucoder design">
+                                            <span class="status">30%</span>
+                                            <div class="overlay"></div>
+                                        </a>
+                                        <div class="text py-3 px-3">
+                                            <h3>
+                                                <a href="#">Pink Printed Official Matchday Replica Jersey 2023</a>
+                                            </h3>
+                                            <div class="d-flex">
+                                                <div class="pricing">
+                                                    <p class="price">
+                                                        <span class="mr-2 price-dc">₹1999</span>
+                                                        <span class="price-sale">₹1799</span>
+                                                    </p>
+                                                </div>
+                                                <div class="rating">
+                                                    <p class="text-right">
+                                                        <button type="button" class="btn btn-primary">Buy Now</button>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="product">
+                                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/shirt3.png" alt="Shailucoder design">
+                                            <span class="status">30%</span>
+                                            <div class="overlay"></div>
+                                        </a>
+                                        <div class="text py-3 px-3">
+                                            <h3>
+                                                <a href="#">Pink Printed Official Matchday Replica Jersey 2023</a>
+                                            </h3>
+                                            <div class="d-flex">
+                                                <div class="pricing">
+                                                    <p class="price">
+                                                        <span class="mr-2 price-dc">₹1999</span>
+                                                        <span class="price-sale">₹1799</span>
+                                                    </p>
+                                                </div>
+                                                <div class="rating">
+                                                    <p class="text-right">
+                                                        <button type="button" class="btn btn-primary">Buy Now</button>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <a class="carousel-control-prev" href="#bookcarsouel" role="button" data-slide="prev">
+                                                                                                                                                                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                                                                                                                                                        <span class="sr-only">Previous</span>
+                                                                                                                                                                                                    </a>
+                                                                                                                                                                                                    <a class="carousel-control-next" href="#bookcarsouel" role="button" data-slide="next">
+                                                                                                                                                                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                                                                                                                                                        <span class="sr-only">Next</span>
+                                                                                                                                                                                                    </a> -->
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row d-none d-md-flex mt-4 mb-4">
+                            <div class="col col-md-3">
+                                <a href="#" class="img-prod"><img class="img-fluid logoclass" src="static/images/invisible.png" alt="Shailucoder design"></div>
+                                <div class="col-sm col-md-3 col-lg ftco-animate">
+                                    <div class="product">
+                                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/shirt1.png" alt="Shailucoder design">
+                                            <span class="status">30%</span>
+                                            <div class="overlay"></div>
+                                        </a>
+                                        <div class="text py-3 px-3">
+                                            <h3>
+                                                <a href="#">Pink Printed Official Matchday Replica Jersey 2023</a>
+                                            </h3>
+                                            <div class="d-flex">
+                                                <div class="pricing">
+                                                    <p class="price">
+                                                        <span class="mr-2 price-dc">₹1999</span>
+                                                        <span class="price-sale">₹1799</span>
+                                                    </p>
+                                                </div>
+                                                <div class="rating">
+                                                    <p class="text-right">
+                                                        <button type="button" class="btn btn-primary">Buy Now</button>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm col-md-3 col-lg ftco-animate">
+                                    <div class="product">
+                                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/shirt2.png" alt="Shailucoder design">
+                                            <span class="status">30%</span>
+                                            <div class="overlay"></div>
+                                        </a>
+                                        <div class="text py-3 px-3">
+                                            <h3>
+                                                <a href="#">Purple Printed Training Jersey 2023</a>
+                                            </h3>
+                                            <div class="d-flex">
+                                                <div class="pricing">
+                                                    <p class="price">
+                                                        <span class="mr-2 price-dc">₹1599</span>
+                                                        <span class="price-sale">₹1299</span>
+                                                    </p>
+                                                </div>
+                                                <div class="rating">
+                                                    <p class="text-right">
+                                                        <button type="button" class="btn btn-primary">Buy Now</button>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm col-md-3 col-lg ftco-animate">
+                                    <div class="product">
+                                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/shirt3.png" alt="Shailucoder design">
+                                            <span class="status">30%</span>
+                                            <div class="overlay"></div>
+                                        </a>
+                                        <div class="text py-3 px-3">
+                                            <h3>
+                                                <a href="#">Navy Blue Collar Polo</a>
+                                            </h3>
+                                            <div class="d-flex">
+                                                <div class="pricing">
+                                                    <p class="price">
+                                                        <span class="mr-2 price-dc">₹1249</span>
+                                                        <span class="price-sale">₹1049</span>
+                                                    </p>
+                                                </div>
+                                                <div class="rating">
+                                                    <p class="text-right">
+                                                        <button type="button" class="btn btn-primary">Buy Now</button>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="ms-content">
+                                        <h4>Next Match</h4>
+                                        <div class="mc-table">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="left-team">
+                                                            <img src="static/img/match/tf-1.jpg" alt="">
+                                                            <h6>Cambodia</h6>
+                                                        </td>
+                                                        <td class="mt-content">
+                                                            <div class="mc-op">Ucraina vs England</div>
+                                                            <h4>VS</h4>
+                                                            <div class="mc-op">15 September 2019</div>
+                                                        </td>
+                                                        <td class="right-team">
+                                                            <img src="static/img/match/tf-2.jpg" alt="">
+                                                            <h6>Qatar</h6>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="mc-table">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="left-team">
+                                                            <img src="static/img/match/tf-3.jpg" alt="">
+                                                            <h6>Australia</h6>
+                                                        </td>
+                                                        <td class="mt-content">
+                                                            <div class="mc-op">Ucraina vs England</div>
+                                                            <h4>VS</h4>
+                                                            <div class="mc-op">15 September 2019</div>
+                                                        </td>
+                                                        <td class="right-team">
+                                                            <img src="static/img/match/tf-4.jpg" alt="">
+                                                            <h6>Iraq</h6>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="mc-table">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="left-team">
+                                                            <img src="static/img/match/tf-5.jpg" alt="">
+                                                            <h6>Ucraina</h6>
+                                                        </td>
+                                                        <td class="mt-content">
+                                                            <div class="mc-op">Ucraina vs England</div>
+                                                            <h4>VS</h4>
+                                                            <div class="mc-op">15 September 2019</div>
+                                                        </td>
+                                                        <td class="right-team">
+                                                            <img src="static/img/match/tf-6.jpg" alt="">
+                                                            <h6>Jordan</h6>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="ms-content">
+                                        <h4>Recent Results</h4>
+                                        <div class="mc-table">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="left-team">
+                                                            <img src="static/img/match/tf-1.jpg" alt="">
+                                                            <h6>Darussalam</h6>
+                                                        </td>
+                                                        <td class="mt-content">
+                                                            <div class="mc-op">Ucraina vs England</div>
+                                                            <h4>1 : 2</h4>
+                                                            <div class="mc-op">15 September 2019</div>
+                                                        </td>
+                                                        <td class="right-team">
+                                                            <img src="static/img/match/tf-2.jpg" alt="">
+                                                            <h6>Ucraina</h6>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="mc-table">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="left-team">
+                                                            <img src="static/img/match/tf-3.jpg" alt="">
+                                                            <h6>Japan</h6>
+                                                        </td>
+                                                        <td class="mt-content">
+                                                            <div class="mc-op">Ucraina vs England</div>
+                                                            <h4>1 : 2</h4>
+                                                            <div class="mc-op">15 September 2019</div>
+                                                        </td>
+                                                        <td class="right-team">
+                                                            <img src="static/img/match/tf-4.jpg" alt="">
+                                                            <h6>Philippines</h6>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="mc-table">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="left-team">
+                                                            <img src="static/img/match/tf-5.jpg" alt="">
+                                                            <h6>Kyrgyz</h6>
+                                                        </td>
+                                                        <td class="mt-content">
+                                                            <div class="mc-op">Ucraina vs England</div>
+                                                            <h4>1 : 2</h4>
+                                                            <div class="mc-op">15 September 2019</div>
+                                                        </td>
+                                                        <td class="right-team">
+                                                            <img src="static/img/match/tf-6.jpg" alt="">
+                                                            <h6 class="mi-right">Pakistan</h6>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="container mt-4">
+                            <div class="col-md-12">
+                                <div class="section-title text-white">
+                                    <h3>NEWS & FEATURES
+                                        <a class="square-text" style="cursor: pointer;">More</a>
+                                    </h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card text-bg-dark">
+                                            <div class="position-relative">
+                                                <img src="static/images/rajasthan1.png" class="card-img" alt="...">
+                                                <div
+                                                    class="card-img-overlay">
+                                                    <!-- <p class="card-text text-light font-weight-bold">Royals Academy recruit Shoaib Bashir makes first-class debut for Somerset</p>
+                                                                                                                                                                                                                                                                                                                    <p class="card-text text-light"><i class="bi bi-clock fs-4 font-weight-bold"></i><small class="font-weight-bold" style="padding-left: 5px;">26 Jun, 2023<i class="bi bi-clock share_icon"></i></small></p>
+                                                                                                                                                                                                                                                                                                                     -->
+
+
+                                                    <div class="col-md-12 givn-pdg">
+                                                        <div class="row">
+                                                            <p class="card-text text-light font-weight-bold">Royals Academy recruit Shoaib Bashir makes first-class debut for Somerset</p>
+                                                            <div class="col-xl-10 col-lg-10 col-md-11 col-sm-10 col-10">
+                                                                <p class="card-text text-light">
+                                                                    <i class="bi bi-clock fs-4 font-weight-bold"></i>
+                                                                    <small class="font-weight-bold" style="padding-left: 5px;">26 Jun, 2023</small>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-2 col-2">
+                                                                <i class="bi bi-share fs-4 font-weight-bold text-light"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="overlay extra-dark"></div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-3 mt-4 mt-md-0">
+                                        <div class="card">
+                                            <img src="static/images/batsman.png" class="card-img-top" alt="...">
+                                            <div
+                                                class="card-body" style="background-color: #191C21;">
+                                                <!-- <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                                                                                                                                                                                                                                              <a href="#" class="btn btn-primary">Go somewhere</a> -->
+
+
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <p class="card-text text-light font-weight-bold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                        <div class="col-xl-10 col-lg-10 col-md-11 col-sm-10 col-10">
+                                                            <p class="card-text text-light">
+                                                                <i class="bi bi-clock fs-4 font-weight-bold"></i>
+                                                                <small class="font-weight-bold" style="padding-left: 5px;">26 Jun, 2023</small>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-xl-2 col-lg-2 col-md-1 col-sm-2 col-2">
+                                                            <i class="bi bi-share fs-4 font-weight-bold text-light"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mt-4 mt-md-0">
+                                        <div class="card">
+                                            <img src="static/images/batsman2.png" class="card-img-top" alt="...">
+                                            <div
+                                                class="card-body" style="background-color: #191C21;">
+                                                <!-- <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                                                                                                                                                                                                                                              <a href="#" class="btn btn-primary">Go somewhere</a> -->
+
+
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <p class="card-text text-light font-weight-bold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                        <div class="col-xl-10 col-lg-10 col-md-11 col-sm-10 col-10">
+                                                            <p class="card-text text-light">
+                                                                <i class="bi bi-clock fs-4 font-weight-bold"></i>
+                                                                <small class="font-weight-bold" style="padding-left: 5px;">26 Jun, 2023</small>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-xl-2 col-lg-2 col-md-1 col-sm-2 col-2">
+                                                            <i class="bi bi-share fs-4 font-weight-bold text-light"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="container mt-4">
+                        <div class="col-md-12">
+                            <div class="section-title text-white ">
+                                <h3>HAVE YOUR SAY?
+                                    <!-- <a class="square-text">More</a> -->
+                                </h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 custom-background">
+                                    <div class="col-md-12 mt-md-5">
+                                        <div class="card text-bg-light custom-transparent-container align-items-center">
+                                            <div class="card-header text-light font-weight-bold">HOW MANY RUNS WILL JOE ROOT SCORE IN THE 2023 ASHES?</div>
+                                            <div class="card-body">
+                                                <div class="container">
+                                                    <div class="row text-light font-weight-bold">
+                                                        <div class="col-md-6">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                                <label class="form-check-label" for="exampleRadios1">
+                                                                    Less Than 200
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" value="option1">
+                                                                <label class="form-check-label" for="exampleRadios1">
+                                                                    200 - 350
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" value="option1">
+                                                                <label class="form-check-label" for="exampleRadios1">
+                                                                    350 - 500
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" value="option1">
+                                                                <label class="form-check-label" for="exampleRadios1">
+                                                                    500+
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 custom-transparent-card">
+                                    <div class="card text-bg-dark">
+                                        <div class="position-relative">
+                                            <img src="static/images/app-dark-banner.png" class="card-img" alt="...">
+                                            <div
+                                                class="card-img-overlay">
+                                                <!-- <p class="card-text text-light font-weight-bold">Royals Academy recruit Shoaib Bashir makes first-class debut for Somerset</p>
+                                                                                                                                                                                                                                                                                                <p class="card-text text-light"><i class="bi bi-clock fs-4 font-weight-bold"></i><small class="font-weight-bold" style="padding-left: 5px;">26 Jun, 2023<i class="bi bi-clock share_icon"></i></small></p>
+                                                                                                                                                                                                                                                                                                 -->
+
+
+                                                <div class="col-md-12 givn-pdg d-flex justify-content-end align-items-end">
+                                                    <div
+                                                        class="row">
+                                                        <!-- <p class="card-text text-light font-weight-bold">Royals Academy recruit Shoaib Bashir makes first-class debut for Somerset</p> -->
+                                                        <div class="col-md-6 col-sm-6 mt-2">
+                                                            <button type="button" class="btn btn-outline-secondary">Google Play</button>
+
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6 mt-2">
+                                                            <button type="button" class="btn btn-outline-secondary">Download App</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- <div class="overlay extra-dark"></div> -->
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="container mt-4">
+                            <div class="col-md-12">
+                                <div class="section-title text-white ">
+                                    <h3>ROYALS TV
+                                        <a class="square-text" style="cursor: pointer;">More</a>
+                                    </h3>
+                                </div>
+                                <div class="container mt-4">
+                                    <div class="row">
+
+                                        <div class="col-lg-4 col-sm-6 px-0">
+                                            <div class="content-wrapper">
+                                                <div class="video-container">
+                                                    <div class="video-wrapper">
+                                                        <div class="soccer-item set-bg" data-setbg="static/images/handshake.png">
+                                                            <div class="card-img-overlay">
+
+                                                                <div class="si-text">
+                                                                    <i class="bi bi-play-btn-fill"></i>
+                                                                    <h5>
+                                                                        <a href="#">The Reverse Gear Challenge ft. Sanju, Romi, KC & Parag | Powered by Mahindra Thar | Rajasthan Royals</a>
+                                                                    </h5>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <i class="bi bi-clock fs-4 font-weight-bold"></i>
+                                                                            29 May,2023</li>
+                                                                        <li>
+                                                                            <i class="bi bi-share fs-4 font-weight-bold"></i>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="overlay extra-dark"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 px-0">
+                                            <div class="content-wrapper">
+                                                <div class="video-container">
+                                                    <div class="video-wrapper">
+                                                        <div class="soccer-item set-bg" data-setbg="static/images/player2rajasthan.png">
+                                                            <div class="card-img-overlay">
+
+                                                                <div class="si-text">
+                                                                    <i class="bi bi-play-btn-fill"></i>
+                                                                    <h5>
+                                                                        <a href="#">Secret Games ft. Team Ashwin & Team Yuzi | Chess Challenge | Rajasthan Royals</a>
+                                                                    </h5>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <i class="bi bi-clock fs-4 font-weight-bold"></i>
+                                                                            29 May,2023</li>
+                                                                        <li>
+                                                                            <i class="bi bi-share fs-4 font-weight-bold"></i>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="overlay extra-dark"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 px-0">
+                                            <div class="content-wrapper">
+                                                <div class="video-container">
+                                                    <div class="video-wrapper">
+                                                        <div class="soccer-item set-bg" data-setbg="static/images/blackperson1.png">
+                                                            <div class="card-img-overlay">
+
+                                                                <div class="si-text">
+                                                                    <i class="bi bi-play-btn-fill"></i>
+                                                                    <h5>
+                                                                        <a href="#">Reliving IPL 2023 | Best Moments | Rajasthan Royals</a>
+                                                                    </h5>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <i class="bi bi-clock fs-4 font-weight-bold"></i>
+                                                                            29 May,2023</li>
+                                                                        <li>
+                                                                            <i class="bi bi-share fs-4 font-weight-bold"></i>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="overlay extra-dark"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div id="my_slider" class="carousel slide custom-background mt-5" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="container jus d-flex align-items-center justify-content-center">
+                                                <div class="text-center nameplayer">
+                                                    <p class="h1" style="color: white;">Sanju</p>
+                                                    <p class="h2" style="color: #C4609D;">Samson</p>
+                                                    <hr class="my-1" style="border-top: 0.5px solid white;">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <!-- <tr>
+                                                                                                                                                                                                                                                                                                    <th scope="col">#</th>
+                                                                                                                                                                                                                                                                                                    <th scope="col">First</th>
+                                                                                                                                                                                                                                                                                                    <th scope="col">Last</th>
+                                                                                                                                                                                                                                                                                                    <th scope="col">Handle</th>
+                                                                                                                                                                                                                                                                                                  </tr> -->
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <!-- <th scope="row">1</th> -->
+                                                                <td style="color: white;">Wicket-Keeper</td>
+                                                                <td style="color: white;">Captain</td>
+                                                                <td style="color: white;">India</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <!-- <hr class="my-1" style="border-top: 0.5px solid white;"> -->
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" style="color: rgb(90, 86, 86);">Matches</th>
+                                                                <th scope="col" style="color: rgb(90, 86, 86);">run</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="color: white;">14</td>
+                                                                <td style="color: white;">362</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="banner_img"><img src="static/images/player1.png"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="container jus d-flex align-items-center justify-content-center">
+                                                <div class="text-center nameplayer">
+                                                    <p class="h1" style="color: white;">Sanju</p>
+                                                    <p class="h2" style="color: #C4609D;">Samson</p>
+                                                    <hr class="my-1" style="border-top: 0.5px solid white;">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <!-- <tr>
+                                                                                                                                                                                                                                                                                                    <th scope="col">#</th>
+                                                                                                                                                                                                                                                                                                    <th scope="col">First</th>
+                                                                                                                                                                                                                                                                                                    <th scope="col">Last</th>
+                                                                                                                                                                                                                                                                                                    <th scope="col">Handle</th>
+                                                                                                                                                                                                                                                                                                  </tr> -->
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <!-- <th scope="row">1</th> -->
+                                                                <td style="color: white;">Wicket-Keeper</td>
+                                                                <td style="color: white;">Captain</td>
+                                                                <td style="color: white;">India</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <!-- <hr class="my-1" style="border-top: 0.5px solid white;"> -->
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" style="color: rgb(90, 86, 86);">Matches</th>
+                                                                <th scope="col" style="color: rgb(90, 86, 86);">run</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="color: white;">14</td>
+                                                                <td style="color: white;">362</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="banner_img"><img src="static/images/player2.png"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="container jus d-flex align-items-center justify-content-center">
+                                                <div class="text-center nameplayer">
+                                                    <p class="h1" style="color: white;">Sanju</p>
+                                                    <p class="h2" style="color: #C4609D;">Samson</p>
+                                                    <hr class="my-1" style="border-top: 0.5px solid white;">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <!-- <tr>
+                                                                                                                                                                                                                                                                                                    <th scope="col">#</th>
+                                                                                                                                                                                                                                                                                                    <th scope="col">First</th>
+                                                                                                                                                                                                                                                                                                    <th scope="col">Last</th>
+                                                                                                                                                                                                                                                                                                    <th scope="col">Handle</th>
+                                                                                                                                                                                                                                                                                                  </tr> -->
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <!-- <th scope="row">1</th> -->
+                                                                <td style="color: white;">Wicket-Keeper</td>
+                                                                <td style="color: white;">Captain</td>
+                                                                <td style="color: white;">India</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <!-- <hr class="my-1" style="border-top: 0.5px solid white;"> -->
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" style="color: rgb(90, 86, 86);">Matches</th>
+                                                                <th scope="col" style="color: rgb(90, 86, 86);">run</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="color: white;">14</td>
+                                                                <td style="color: white;">362</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="banner_img"><img src="static/images/player3.png"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+
+                        <div class="container mt-4">
+                            <div class="col-md-12">
+                                <div class="section-title text-white">
+                                    <h3>PHOTOS
+                                        <a class="square-text" style="cursor: pointer;">More</a>
+                                    </h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card text-bg-dark">
+                                            <div class="position-relative">
+                                                <img src="static/images/photos1.png" class="card-img" alt="...">
+                                                <div
+                                                    class="card-img-overlay">
+                                                    <!-- <p class="card-text text-light font-weight-bold">Royals Academy recruit Shoaib Bashir makes first-class debut for Somerset</p>
+                                                                                                                                                                                                                                                                                                                    <p class="card-text text-light"><i class="bi bi-clock fs-4 font-weight-bold"></i><small class="font-weight-bold" style="padding-left: 5px;">26 Jun, 2023<i class="bi bi-clock share_icon"></i></small></p>
+                                                                                                                                                                                                                                                                                                                     -->
+
+
+                                                    <div class="col-md-12 givn-pdg">
+                                                        <div class="row">
+                                                            <p class="card-text text-light font-weight-bold">
+                                                                IPL 2023 - One last time | Rajasthan Royals</p>
+                                                            <div class="col-xl-10 col-lg-10 col-md-11 col-sm-10 col-10">
+                                                                <p class="card-text text-light">
+                                                                    <i class="bi bi-clock fs-4 font-weight-bold"></i>
+                                                                    <small class="font-weight-bold" style="padding-left: 5px;">26 Jun, 2023</small>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-xl-2 col-lg-2 col-md-1 col-sm-2 col-2">
+                                                                <i class="bi bi-share fs-4 font-weight-bold text-light"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="overlay extra-dark"></div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-3 mt-4 mt-md-0">
+                                        <div class="card">
+                                            <img src="static/images/photos2.png" class="card-img-top" alt="...">
+                                            <div
+                                                class="card-body" style="background-color: #191C21;">
+                                                <!-- <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                                                                                                                                                                                                                                              <a href="#" class="btn btn-primary">Go somewhere</a> -->
+
+
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <p class="card-text text-light font-weight-bold">
+                                                            PBKS vs RR: Royals finish league stage with a win</p>
+                                                        <div class="col-xl-10 col-lg-10 col-md-11 col-sm-10 col-10">
+                                                            <p class="card-text text-light">
+                                                                <i class="bi bi-clock fs-4 font-weight-bold"></i>
+                                                                <small class="font-weight-bold" style="padding-left: 5px;">26 Jun, 2023</small>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-xl-2 col-lg-2 col-md-1 col-sm-2 col-2">
+                                                            <i class="bi bi-share fs-4 font-weight-bold text-light"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mt-4 mt-md-0">
+                                        <div class="card">
+                                            <img src="static/images/photos3.png" class="card-img-top" alt="...">
+                                            <div
+                                                class="card-body" style="background-color: #191C21;">
+                                                <!-- <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                                                                                                                                                                                                                                                              <a href="#" class="btn btn-primary">Go somewhere</a> -->
+
+
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <p class="card-text text-light font-weight-bold">
+                                                            RR vs RCB: The last home game of the season</p>
+                                                        <div class="col-xl-10 col-lg-10 col-md-11 col-sm-10 col-10">
+                                                            <p class="card-text text-light">
+                                                                <i class="bi bi-clock fs-4 font-weight-bold"></i>
+                                                                <small class="font-weight-bold" style="padding-left: 5px;">26 Jun, 2023</small>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-xl-2 col-lg-2 col-md-1 col-sm-2 col-2">
+                                                            <i class="bi bi-share fs-4 font-weight-bold text-light"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+            <section class="match-section set-bg" data-setbg="static/img/match/background2.png">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="section-title text-white">
+                                <h3>Videos
+                                    <a class="square-text" style="cursor: pointer;">More</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 px-0 col-md-3 mt-4 mt-md-0">
+                            <div class="content-wrapper">
+                                <div class="video-container">
+                                    <div class="video-wrapper">
+                                        <div class="soccer-item set-bg" data-setbg="static/images/news1.png">
+                                            <div class="card-img-overlay">
+
+                                                <div class="si-text">
+                                                    <i class="bi bi-play-btn-fill"></i>
+                                                    <h5>
+                                                        <a href="#">The Reverse Gear Challenge ft. Sanju, Romi, KC & Parag | Powered by Mahindra Thar | Rajasthan Royals</a>
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            <i class="bi bi-clock fs-4 font-weight-bold"></i>
+                                                            29 May,2023</li>
+                                                        <li>
+                                                            <i class="bi bi-share fs-4 font-weight-bold"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="overlay extra-dark"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 px-0 col-md-3 mt-4 mt-md-0">
+                            <div class="content-wrapper">
+                                <div class="video-container">
+                                    <div class="video-wrapper">
+                                        <div class="soccer-item set-bg" data-setbg="static/images/news2.png">
+                                            <div class="card-img-overlay">
+
+                                                <div class="si-text">
+                                                    <i class="bi bi-play-btn-fill"></i>
+                                                    <h5>
+                                                        <a href="#">The Reverse Gear Challenge ft. Sanju, Romi, KC & Parag | Powered by Mahindra Thar | Rajasthan Royals</a>
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            <i class="bi bi-clock fs-4 font-weight-bold"></i>
+                                                            29 May,2023</li>
+                                                        <li>
+                                                            <i class="bi bi-share fs-4 font-weight-bold"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="overlay extra-dark"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 px-0 col-md-3 mt-4 mt-md-0">
+                            <div class="content-wrapper">
+                                <div class="video-container">
+                                    <div class="video-wrapper">
+                                        <div class="soccer-item set-bg" data-setbg="static/images/news3.png">
+                                            <div class="card-img-overlay">
+
+                                                <div class="si-text">
+                                                    <i class="bi bi-play-btn-fill"></i>
+                                                    <h5>
+                                                        <a href="#">The Reverse Gear Challenge ft. Sanju, Romi, KC & Parag | Powered by Mahindra Thar | Rajasthan Royals</a>
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            <i class="bi bi-clock fs-4 font-weight-bold"></i>
+                                                            29 May,2023</li>
+                                                        <li>
+                                                            <i class="bi bi-share fs-4 font-weight-bold"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="overlay extra-dark"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 px-0 col-md-3 mt-4 mt-md-0">
+                            <div class="content-wrapper">
+                                <div class="video-container">
+                                    <div class="video-wrapper">
+                                        <div class="soccer-item set-bg" data-setbg="static/images/news4.png">
+                                            <div class="card-img-overlay">
+
+                                                <div class="si-text">
+                                                    <i class="bi bi-play-btn-fill"></i>
+                                                    <h5>
+                                                        <a href="#">The Reverse Gear Challenge ft. Sanju, Romi, KC & Parag | Powered by Mahindra Thar | Rajasthan Royals</a>
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            <i class="bi bi-clock fs-4 font-weight-bold"></i>
+                                                            29 May,2023</li>
+                                                        <li>
+                                                            <i class="bi bi-share fs-4 font-weight-bold"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="overlay extra-dark"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- Match Section End -->
+
+
+            <!-- Match Section Begin -->
+            <section class="match-section set-bg" data-setbg="static/img/match/match-bg.jpg">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="bookcarsouel" class="carousel slide d-md-none" data-ride="carousel">
+                                <div class="carousel-inner booknowhide">
+                                    <div
+                                        class="carousel-item active">
+                                        <!-- <img src="static/images/product-1.jpg" alt="Slide 1"> -->
+                                        <div class="product">
+                                            <a href="#" class="img-prod"><img class="img-fluid" src="static/images/oog1.png" alt="Shailucoder design">
+                                                <span class="status">30%</span>
+                                                <div class="overlay"></div>
+                                            </a>
+                                            <div class="text py-3 px-3">
+                                                <h3>
+                                                    <a href="#">Pink Printed Official Matchday Replica Jersey 2023</a>
+                                                </h3>
+                                                <div class="d-flex">
+                                                    <div class="pricing">
+                                                        <p class="price">
+                                                            <span class="mr-2 price-dc">₹1999</span>
+                                                            <span class="price-sale">₹1799</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <p class="text-right">
+                                                            <button type="button" class="btn btn-primary">Buy Now</button>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="product">
+                                            <a href="#" class="img-prod"><img class="img-fluid" src="static/images/oog2.png" alt="Shailucoder design">
+                                                <span class="status">30%</span>
+                                                <div class="overlay"></div>
+                                            </a>
+                                            <div class="text py-3 px-3">
+                                                <h3>
+                                                    <a href="#">Pink Printed Official Matchday Replica Jersey 2023</a>
+                                                </h3>
+                                                <div class="d-flex">
+                                                    <div class="pricing">
+                                                        <p class="price">
+                                                            <span class="mr-2 price-dc">₹1999</span>
+                                                            <span class="price-sale">₹1799</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <p class="text-right">
+                                                            <button type="button" class="btn btn-primary">Buy Now</button>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="product">
+                                            <a href="#" class="img-prod"><img class="img-fluid" src="static/images/oog3.png" alt="Shailucoder design">
+                                                <span class="status">30%</span>
+                                                <div class="overlay"></div>
+                                            </a>
+                                            <div class="text py-3 px-3">
+                                                <h3>
+                                                    <a href="#">Pink Printed Official Matchday Replica Jersey 2023</a>
+                                                </h3>
+                                                <div class="d-flex">
+                                                    <div class="pricing">
+                                                        <p class="price">
+                                                            <span class="mr-2 price-dc">₹1999</span>
+                                                            <span class="price-sale">₹1799</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <p class="text-right">
+                                                            <button type="button" class="btn btn-primary">Buy Now</button>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="carousel-control-prev" href="#bookcarsouel" role="button" data-slide="prev">
+                                                                                                                                                                                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                                                                                                                                                                        <span class="sr-only">Previous</span>
+                                                                                                                                                                                                                    </a>
+                                                                                                                                                                                                                    <a class="carousel-control-next" href="#bookcarsouel" role="button" data-slide="next">
+                                                                                                                                                                                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                                                                                                                                                                        <span class="sr-only">Next</span>
+                                                                                                                                                                                                                    </a> -->
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row d-none d-md-flex mt-4 mb-4">
+                                <div class="col col-md-3">
+                                    <a href="#" class="img-prod"><img class="img-fluid logoclass" src="static/images/invisible.png" alt="Shailucoder design"></div>
+                                    <div class="col-sm col-md-3 col-lg ftco-animate">
+                                        <div class="product">
+                                            <a href="#" class="img-prod"><img class="img-fluid" src="static/images/oog1.png" alt="Shailucoder design">
+                                                <span class="status">30%</span>
+                                                <div class="overlay"></div>
+                                            </a>
+                                            <div class="text py-3 px-3">
+                                                <h3>
+                                                    <a href="#">Pink Printed Official Matchday Replica Jersey 2023</a>
+                                                </h3>
+                                                <div class="d-flex">
+                                                    <div class="pricing">
+                                                        <p class="price">
+                                                            <span class="mr-2 price-dc">₹1999</span>
+                                                            <span class="price-sale">₹1799</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <p class="text-right">
+                                                            <button type="button" class="btn btn-primary">Buy Now</button>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm col-md-3 col-lg ftco-animate">
+                                        <div class="product">
+                                            <a href="#" class="img-prod"><img class="img-fluid" src="static/images/oog2.png" alt="Shailucoder design">
+                                                <span class="status">30%</span>
+                                                <div class="overlay"></div>
+                                            </a>
+                                            <div class="text py-3 px-3">
+                                                <h3>
+                                                    <a href="#">Purple Printed Training Jersey 2023</a>
+                                                </h3>
+                                                <div class="d-flex">
+                                                    <div class="pricing">
+                                                        <p class="price">
+                                                            <span class="mr-2 price-dc">₹1599</span>
+                                                            <span class="price-sale">₹1299</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <p class="text-right">
+                                                            <button type="button" class="btn btn-primary">Buy Now</button>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm col-md-3 col-lg ftco-animate">
+                                        <div class="product">
+                                            <a href="#" class="img-prod"><img class="img-fluid" src="static/images/oog3.png" alt="Shailucoder design">
+                                                <span class="status">30%</span>
+                                                <div class="overlay"></div>
+                                            </a>
+                                            <div class="text py-3 px-3">
+                                                <h3>
+                                                    <a href="#">Navy Blue Collar Polo</a>
+                                                </h3>
+                                                <div class="d-flex">
+                                                    <div class="pricing">
+                                                        <p class="price">
+                                                            <span class="mr-2 price-dc">₹1249</span>
+                                                            <span class="price-sale">₹1049</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <p class="text-right">
+                                                            <button type="button" class="btn btn-primary">Buy Now</button>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- Latest Section Begin -->
+                    <section class="latest-section text-white">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="section-title latest-title">
+                                        <h3>Latest
+                                            <span>News</span>
+                                        </h3>
+                                        <ul>
+                                            <li>All</li>
+                                            <li>World Cup</li>
+                                            <li>Champions</li>
+                                            <li>MLS</li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="news-item left-news">
+                                                <div class="ni-pic set-bg" data-setbg="static/img/news/3818763.jpg">
+                                                    <div class="ni-tag">Cricket</div>
+                                                </div>
+                                                <div class="ni-text">
+                                                    <h4>
+                                                        <a href="#" style="color: white;">Once You Learn These Hard Truths About Life, You'll Become</a>
+                                                    </h4>
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fa fa-calendar"></i>
+                                                            29 May,2023</li>
+                                                        <li>
+                                                            <i class="fa fa-edit"></i>
+                                                            3 Comment</li>
+                                                    </ul>
+                                                    <p style="color: white;">It’s that time again when people start thinking about their New Years
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Resolutions. Usually they involve, losing weight, quitting smoking, and joining
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        a gym, just to mention a few.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="news-item">
+                                                <div class="ni-pic">
+                                                    <img src="static/img/news/ln-1.jpg" alt="">
+                                                </div>
+                                                <div class="ni-text">
+                                                    <h5>
+                                                        <a href="#" style="color: white;">How To Quit Smoking Using Zyban</a>
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fa fa-calendar"></i>
+                                                            29 May,2023</li>
+                                                        <li>
+                                                            <i class="fa fa-edit"></i>
+                                                            3 Comment</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="news-item">
+                                                <div class="ni-pic">
+                                                    <img src="static/img/news/ln-2.jpg" alt="">
+                                                </div>
+                                                <div class="ni-text">
+                                                    <h5>
+                                                        <a href="#" style="color: white;">Decorate For Less With Art Posters</a>
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fa fa-calendar"></i>
+                                                            29 May,2023</li>
+                                                        <li>
+                                                            <i class="fa fa-edit"></i>
+                                                            3 Comment</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="news-item">
+                                                <div class="ni-pic">
+                                                    <img src="static/img/news/ln-3.jpg" alt="">
+                                                </div>
+                                                <div class="ni-text">
+                                                    <h5>
+                                                        <a href="#" style="color: white;">Home Business Advertising Ideas</a>
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fa fa-calendar"></i>
+                                                            29 May,2023</li>
+                                                        <li>
+                                                            <i class="fa fa-edit"></i>
+                                                            3 Comment</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="news-item">
+                                                <div class="ni-pic">
+                                                    <img src="static/img/news/ln-4.jpg" alt="">
+                                                </div>
+                                                <div class="ni-text">
+                                                    <h5>
+                                                        <a href="#" style="color: white;">Lasik Doesn T Stop Your Eyes From Aging</a>
+                                                    </h5>
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fa fa-calendar"></i>
+                                                            29 May,2023</li>
+                                                        <li>
+                                                            <i class="fa fa-edit"></i>
+                                                            3 Comment</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="section-title">
+                                        <h3>Club
+                                            <span>Ranking</span>
+                                        </h3>
+                                    </div>
+                                    <div class="points-table">
+                                        <table class="table-light">
+                                            <thead>
+                                                <tr>
+                                                    <th class="th-o">Pos</th>
+                                                    <th>Team</th>
+                                                    <th class="th-o">P</th>
+                                                    <th class="th-o">W</th>
+                                                    <th class="th-o">L</th>
+                                                    <th class="th-o">PTS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td class="team-name">
+                                                        <img src="static/img/flag/flag-1.jpg" alt="">
+                                                        <span>Afghanis</span>
+                                                    </td>
+                                                    <td>22</td>
+                                                    <td>2</td>
+                                                    <td>5</td>
+                                                    <td>72</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td class="team-name">
+                                                        <img src="static/img/flag/flag-2.jpg" alt="">
+                                                        <span>Australia</span>
+                                                    </td>
+                                                    <td>20</td>
+                                                    <td>3</td>
+                                                    <td>4</td>
+                                                    <td>71</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td class="team-name">
+                                                        <img src="static/img/flag/flag-3.jpg" alt="">
+                                                        <span>Qatar</span>
+                                                    </td>
+                                                    <td>18</td>
+                                                    <td>4</td>
+                                                    <td>4</td>
+                                                    <td>68</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td class="team-name">
+                                                        <img src="static/img/flag/flag-4.jpg" alt="">
+                                                        <span>Cambodia</span>
+                                                    </td>
+                                                    <td>17</td>
+                                                    <td>2</td>
+                                                    <td>7</td>
+                                                    <td>64</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td class="team-name">
+                                                        <img src="static/img/flag/flag-5.jpg" alt="">
+                                                        <span>Uzbekistan</span>
+                                                    </td>
+                                                    <td>17</td>
+                                                    <td>2</td>
+                                                    <td>6</td>
+                                                    <td>60</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td class="team-name">
+                                                        <img src="static/img/flag/flag-6.jpg" alt="">
+                                                        <span>Turkme</span>
+                                                    </td>
+                                                    <td>161</td>
+                                                    <td>1</td>
+                                                    <td>8</td>
+                                                    <td>57</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td class="team-name">
+                                                        <img src="static/img/flag/flag-7.jpg" alt="">
+                                                        <span>Sri Lanka</span>
+                                                    </td>
+                                                    <td>15</td>
+                                                    <td>4</td>
+                                                    <td>8</td>
+                                                    <td>52</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td class="team-name">
+                                                        <img src="static/img/flag/flag-8.jpg" alt="">
+                                                        <span>Myanmar</span>
+                                                    </td>
+                                                    <td>14</td>
+                                                    <td>3</td>
+                                                    <td>7</td>
+                                                    <td>48</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <a href="#" class="p-all">View All</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Latest Section End -->
+
+
+                    <!-- Video Section Begin -->
+                    <section class="video-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="section-title text-white">
+                                        <h3>Hot
+                                            <span>Videos</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="video-slider owl-carousel">
+                                    <div class="col-lg-3">
+                                        <div class="video-item set-bg" data-setbg="static/img/videos/video1.jpg">
+                                            <div class="vi-title">
+                                                <h5>A World Of Infinite Opportunities</h5>
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=dhYOPzcsbGM" class="play-btn video-popup"><img src="static/img/videos/play.png" alt=""></a>
+                                            <div class="vi-time">11:13</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="video-item set-bg" data-setbg="static/img/videos/video3.png">
+                                            <div class="vi-title">
+                                                <h5>Video Games Playing With Imagination</h5>
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=dhYOPzcsbGM" class="play-btn video-popup"><img src="static/img/videos/play.png" alt=""></a>
+                                            <div class="vi-time">11:13</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="video-item set-bg" data-setbg="static/img/videos/video3.png">
+                                            <div class="vi-title">
+                                                <h5>Home Audio Recording For Everyone</h5>
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=dhYOPzcsbGM" class="play-btn video-popup"><img src="static/img/videos/play.png" alt=""></a>
+                                            <div class="vi-time">11:13</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="video-item set-bg" data-setbg="static/img/videos/video1.jpg">
+                                            <div class="vi-title">
+                                                <h5>What If They Let You Run The Hubble</h5>
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=dhYOPzcsbGM" class="play-btn video-popup"><img src="static/img/videos/play.png" alt=""></a>
+                                            <div class="vi-time">11:13</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="video-item set-bg" data-setbg="static/img/videos/video3.png">
+                                            <div class="vi-title">
+                                                <h5>What If They Let You Run The Hubble</h5>
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=dhYOPzcsbGM" class="play-btn video-popup"><img src="static/img/videos/play.png" alt=""></a>
+                                            <div class="vi-time">11:13</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="video-item set-bg" data-setbg="static/img/videos/video1.jpg">
+                                            <div class="vi-title">
+                                                <h5>What If They Let You Run The Hubble</h5>
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=dhYOPzcsbGM" class="play-btn video-popup"><img src="static/img/videos/play.png" alt=""></a>
+                                            <div class="vi-time">11:13</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Video Section End -->
+
+
+                <!-- Video Best example for close div -->
+                <!-- <section class="video-section">
+                                                    <div class="container">
+                                                        <div class="row justify-content-evenly">
+                                
+                                                                  <div class="col-4 Box-1">
+                                                                    Column
+                                                                  </div>
+                                                                  <div class="col-4 Box-2">
+                                                                    Column
+                                                                  </div>
+                                
+                                                        </div>
+                                
+                                                        
+                                
+                                                    </div>
+                                                </div>
+                                            </section> -->
+
+
+                    <section class="video-section"> 
+                        <div class="container">
+                            <div class="row">
+                                <div
+                                    class="col-5"><!-- Column -->
+                                </div>
+                                <div class="col-7 text-white font-weight-bold">
+                                    Title Sponsor
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="container">
+                        <div class="row">
+                            <div
+                                class="col-3"><!-- Column -->
+                            </div>
+                            <div class="col-9 text-white font-weight-bold">
+                                <a href="#"><img class="sponsor-img img-fluid" src="static/images/luminous.png" alt="Shailucoder design">
+                            </div>
+                        </div>
+
+                        <div class="container mt-4">
+                            <div class="row">
+                                <div
+                                    class="col-5"><!-- Column -->
+                                </div>
+                                <div class="col-7 text-white font-weight-bold">
+                                    Associate Sponsors
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="container mt-4 text-center">
+                            <div class="row justify-content-around">
+                                
+                                <div class="col-3">
+                                    <a href="#"><img class="img-fluid" src="static/images/ooaa1.png" alt="Shailucoder design">
+                                </div>
+                                <div class="col-3">
+                                    <a href="#"><img class="img-fluid" src="static/images/ooaa2.png" alt="Shailucoder design">
+                                </div>
+                                <div class="col-4">
+                                    <a href="#"><img class="img-fluid" src="static/images/ooaa3.png" alt="Shailucoder design">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                        <div class="container mt-4">
+                            <div class="row">
+                                <div
+                                    class="col-5"><!-- Column -->
+                                </div>
+                                <div class="col-7 text-white font-weight-bold">
+                                    Principal Sponsors
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+
+                        <div class="container mt-4 text-center">
+                            <div class="row justify-content-around">
+                                
+                                <div class="col-3">
+                                    <a href="#"><img class="img-fluid" src="static/images/sbi-life.png" alt="Shailucoder design">
+                                </div>
+                                <div class="col-3">
+                                    <a href="#"><img class="img-fluid" src="static/images/goel-tmt.png" alt="Shailucoder design">
+                                </div>
+                                <div class="col-4">
+                                    <a href="#"><img class="img-fluid" src="static/images/ubon-dark.png" alt="Shailucoder design">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+                        
+
+                    </section>
+                    <!-- Video Section End -->
+
+
+                </section>
+
+
+                <!-- Soccer Section Begin -->
+                <!-- <section class="soccer-section">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 p-0">
+                                                                            <div class="section-title">
+                                                                                <h3>Soccer
+                                                                                    <span>Feed</span>
+                                                                                </h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-lg-3 col-sm-6 p-0">
+                                                                            <div class="soccer-item set-bg" data-setbg="static/img/soccer/soccer-1.jpg">
+                                                                                <div class="si-tag">Soccer</div>
+                                                                                <div class="si-text">
+                                                                                    <h5>
+                                                                                        <a href="#">Counting Your Chicken Before They Hatch</a>
+                                                                                    </h5>
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <i class="fa fa-calendar"></i>
+                                                                                           29 May,2023</li>
+                                                                                        <li>
+                                                                                            <i class="fa fa-edit"></i>
+                                                                                            3 Comment</li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-3 col-sm-6 p-0">
+                                                                            <div class="soccer-item set-bg" data-setbg="static/img/soccer/soccer-2.jpg">
+                                                                                <div class="si-tag">Soccer</div>
+                                                                                <div class="si-text">
+                                                                                    <h5>
+                                                                                        <a href="#">Hypnotherapy For Motivation Getting The Drive Back</a>
+                                                                                    </h5>
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <i class="fa fa-calendar"></i>
+                                                                                           29 May,2023</li>
+                                                                                        <li>
+                                                                                            <i class="fa fa-edit"></i>
+                                                                                            3 Comment</li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-3 col-sm-6 p-0">
+                                                                            <div class="soccer-item set-bg" data-setbg="static/img/soccer/soccer-3.jpg">
+                                                                                <div class="si-tag">Soccer</div>
+                                                                                <div class="si-text">
+                                                                                    <h5>
+                                                                                        <a href="#">Astronomy Binoculars A Great Alternative</a>
+                                                                                    </h5>
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <i class="fa fa-calendar"></i>
+                                                                                           29 May,2023</li>
+                                                                                        <li>
+                                                                                            <i class="fa fa-edit"></i>
+                                                                                            3 Comment</li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-3 col-sm-6 p-0">
+                                                                            <div class="soccer-item set-bg" data-setbg="static/img/soccer/soccer-4.jpg">
+                                                                                <div class="si-tag">Soccer</div>
+                                                                                <div class="si-text">
+                                                                                    <h5>
+                                                                                        <a href="#">Decorate For Less With Art Posters</a>
+                                                                                    </h5>
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <i class="fa fa-calendar"></i>
+                                                                                           29 May,2023</li>
+                                                                                        <li>
+                                                                                            <i class="fa fa-edit"></i>
+                                                                                            3 Comment</li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </section> -->
+                <!-- Soccer Section End -->
+
+
+                <!-- Popular News Section Begin -->
+                <!-- <section class="popular-section">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-lg-8">
+                                                                <div class="section-title">
+                                                                    <h3>Popular
+                                                                        <span>Post</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="news-item popular-item set-bg" data-setbg="static/img/news/popular-b.jpg">
+                                                                            <div class="ni-tag tenis">Tenis</div>
+                                                                            <div class="ni-text">
+                                                                                <h5>
+                                                                                    <a href="#">England reach World Cup last 16 with hard-fought win over
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            Argentina</a>
+                                                                                </h5>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <i class="fa fa-calendar"></i>
+                                                                                        29 May,2023</li>
+                                                                                    <li>
+                                                                                        <i class="fa fa-edit"></i>
+                                                                                        3 Comment</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="news-item">
+                                                                            <div class="ni-pic">
+                                                                                <img src="static/img/news/ln-1.jpg" alt="">
+                                                                            </div>
+                                                                            <div class="ni-text">
+                                                                                <h5>
+                                                                                    <a href="#">There’s a great history of the winner Sandia</a>
+                                                                                </h5>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <i class="fa fa-calendar"></i>
+                                                                                        29 May,2023</li>
+                                                                                    <li>
+                                                                                        <i class="fa fa-edit"></i>
+                                                                                        3 Comment</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="news-item">
+                                                                            <div class="ni-pic">
+                                                                                <img src="static/img/news/ln-2.jpg" alt="">
+                                                                            </div>
+                                                                            <div class="ni-text">
+                                                                                <h5>
+                                                                                    <a href="#">It’ll be a tough game and a physical game</a>
+                                                                                </h5>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <i class="fa fa-calendar"></i>
+                                                                                        29 May,2023</li>
+                                                                                    <li>
+                                                                                        <i class="fa fa-edit"></i>
+                                                                                        3 Comment</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="news-item">
+                                                                            <div class="ni-pic">
+                                                                                <img src="static/img/news/ln-3.jpg" alt="">
+                                                                            </div>
+                                                                            <div class="ni-text">
+                                                                                <h5>
+                                                                                    <a href="#">If we don’t score we can’t get frustrated</a>
+                                                                                </h5>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <i class="fa fa-calendar"></i>
+                                                                                        29 May,2023</li>
+                                                                                    <li>
+                                                                                        <i class="fa fa-edit"></i>
+                                                                                        3 Comment</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="news-item popular-item set-bg" data-setbg="static/img/news/popular-b.jpg">
+                                                                            <div class="ni-tag football">Football</div>
+                                                                            <div class="ni-text">
+                                                                                <h5>
+                                                                                    <a href="#">We are playing history and Argentina at the World Cup, says Phil
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            Neville</a>
+                                                                                </h5>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <i class="fa fa-calendar"></i>
+                                                                                        29 May,2023</li>
+                                                                                    <li>
+                                                                                        <i class="fa fa-edit"></i>
+                                                                                        3 Comment</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="news-item">
+                                                                            <div class="ni-pic">
+                                                                                <img src="static/img/news/ln-5.jpg" alt="">
+                                                                            </div>
+                                                                            <div class="ni-text">
+                                                                                <h5>
+                                                                                    <a href="#">Le Havre does have a growing fan club</a>
+                                                                                </h5>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <i class="fa fa-calendar"></i>
+                                                                                        29 May,2023</li>
+                                                                                    <li>
+                                                                                        <i class="fa fa-edit"></i>
+                                                                                        3 Comment</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="news-item">
+                                                                            <div class="ni-pic">
+                                                                                <img src="static/img/news/ln-6.jpg" alt="">
+                                                                            </div>
+                                                                            <div class="ni-text">
+                                                                                <h5>
+                                                                                    <a href="#">It will be hard to break them down</a>
+                                                                                </h5>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <i class="fa fa-calendar"></i>
+                                                                                        29 May,2023</li>
+                                                                                    <li>
+                                                                                        <i class="fa fa-edit"></i>
+                                                                                        3 Comment</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="news-item">
+                                                                            <div class="ni-pic">
+                                                                                <img src="static/img/news/ln-7.jpg" alt="">
+                                                                            </div>
+                                                                            <div class="ni-text">
+                                                                                <h5>
+                                                                                    <a href="#">We’ve never seen them as organised
+                                                                                    </a>
+                                                                                </h5>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <i class="fa fa-calendar"></i>
+                                                                                        29 May,2023</li>
+                                                                                    <li>
+                                                                                        <i class="fa fa-edit"></i>
+                                                                                        3 Comment</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="section-title">
+                                                                    <h3>Follow
+                                                                        <span>Us</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <div class="follow-links">
+                                                                    <ul>
+                                                                        <li class="facebook">
+                                                                            <i class="fa fa-facebook"></i>
+                                                                            <div class="fl-name">Facebook</div>
+                                                                            <span class="fl-fan">2.530 Fans</span>
+                                                                        </li>
+                                                                        <li class="twitter">
+                                                                            <i class="fa fa-twitter"></i>
+                                                                            <div class="fl-name">Twitter</div>
+                                                                            <span class="fl-fan">2.046 Fans</span>
+                                                                        </li>
+                                                                        <li class="google">
+                                                                            <i class="fa fa-google"></i>
+                                                                            <div class="fl-name">Google</div>
+                                                                            <span class="fl-fan">1.170 Fans</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="vote-option set-bg" data-setbg="static/img/news/vote-bg.jpg">
+                                                                    <div class="vo-text">
+                                                                        <h5>In your opinion, which country will win this year</h5>
+                                                                        <div class="vt-item">
+                                                                            <input type="radio" name="like-team" id="one">
+                                                                            <label for="one">Germany</label>
+                                                                        </div>
+                                                                        <div class="vt-item">
+                                                                            <input type="radio" name="like-team" id="two">
+                                                                            <label for="two">Brazil</label>
+                                                                        </div>
+                                                                        <div class="vt-item">
+                                                                            <input type="radio" name="like-team" id="three">
+                                                                            <label for="three">Myanmar</label>
+                                                                        </div>
+                                                                        <div class="vt-item">
+                                                                            <input type="radio" name="like-team" id="four">
+                                                                            <label for="four">Argentina</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section> -->
+                <!-- Popular News Section End -->
+
+                <!-- Footer Section Begin -->
+                    <footer class="footer-section set-bg" data-setbg="static/img/footer-bg.jpg"> <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="fs-logo">
+                                    <div class="logo">
+                                        <a href="./index.html"><img src="static/img/new_logo1.png" alt=""></a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-envelope"></i>
+                                            Info.Shailucoder@gmail.com</li>
+                                        <li>
+                                            <i class="fa fa-copy"></i>
+                                            +(12) 345 6789 10</li>
+                                        <li>
+                                            <i class="fa fa-thumb-tack"></i>
+                                            New Delhi</li>
+                                    </ul>
+                                    <div class="fs-social">
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-tumblr"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 offset-lg-1">
+                                <div class="fs-widget">
+                                    <h4>Top Club</h4>
+                                    <ul class="fw-links">
+                                        <li>
+                                            <a href="#">India</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shri Lanka</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Australia</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">New Zealand</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">South Africa</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="fw-links">
+                                        <li>
+                                            <a href="#">West Indies</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Netherlands</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Zimbabe</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bangladesh</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">India</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="fs-widget">
+                                    <h4>Recent News</h4>
+
+                                    <div class="fw-item">
+                                        <h5>
+                                            <a href="#">Shri Lanka win shows they have the spark to go far at World Cup</a>
+                                        </h5>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-calendar"></i>
+                                                29 May,2023</li>
+                                            <li>
+                                                <i class="fa fa-edit"></i>
+                                                3 Comment</li>
+                                        </ul>
+                                    </div>
+                                    <div class="fw-item">
+                                        <h5>
+                                            <a href="#">Sri Lanka v Australia: Cricket World Cup 2019 – live!</a>
+                                        </h5>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-calendar"></i>
+                                                29 May,2023</li>
+                                            <li>
+                                                <i class="fa fa-edit"></i>
+                                                3 Comment</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="copyright-option">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="co-text">
+                                        <p>
+                                            <!-- Link back to Shailucoder can't be removed. design is licensed under CC BY 3.0. -->
+                                            Copyright &copy;<script>
+                                                document.write(new Date().getFullYear());
+                                            </script>
+                                            All rights reserved | This design is made with
+                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                            by
+                                            <a target="_blank">Shailucoder</a>
+                                            <!-- Link back to Shailucoder can't be removed. design is licensed under CC BY 3.0. -->
+                                        </p>
+                                    </div>
+                                    <div class="co-widget">
+                                        <ul>
+                                            <li><a href="#">Copyright notification</a></li>
+                                            <li><a href="#">Terms of Use</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer Section End -->
+
+                <!-- Search model Begin -->
+                <div class="search-model">
+                    <div class="h-100 d-flex align-items-center justify-content-center">
+                        <div class="search-close-switch">
+                            <i class="fa fa-close"></i>
+                        </div>
+                        <form class="search-model-form">
+                            <input type="text" id="search-input" placeholder="Search here.....">
+                        </form>
+                    </div>
+                </div>
+                <!-- Search model end -->
+
+                <!-- Js Plugins -->
+                <script src="static/js/jquery-3.3.1.min.js"></script>
+                <script src="static/js/bootstrap.min.js"></script>
+                <script src="static/js/jquery.magnific-popup.min.js"></script>
+                <script src="static/js/jquery.slicknav.js"></script>
+                <script src="static/js/owl.carousel.min.js"></script>
+                <script src="static/js/main.js"></script>
+            </body>
+        </html>
+    </body>
+</html></body></html>
